@@ -1,0 +1,12 @@
+[package]
+name = "rustos-efi-boot"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+panic = "abort"
+opt-level = 2
+lto = true
+
+[profile.dev]
+panic = "abort"
